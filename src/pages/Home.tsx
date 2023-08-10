@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Container, Grid, Typography, Avatar } from "@mui/material";
 import person from "../img/Marco-Arias.jpg";
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
   const [greeting, setGreeting] = useState<string>("Hola");
+
+  const { t, i18n } = useTranslation(['translation', 'common']);
 
   const getGreeting = () => {
     const date = new Date();
