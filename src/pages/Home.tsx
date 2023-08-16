@@ -48,9 +48,10 @@ const Home = () => {
   const getGreeting = (t: any) => {
     const date = new Date();
     const hour = date.getHours();
-    if ((hour >= 19 && hour < 24) || (hour >= 0 && hour < 5))
+    if ((hour >= 19 && hour < 24) || (hour >= 0 && hour < 3))
       return t("header.greetingNight");
-    else if (hour >= 5 && hour < 12) return t("header.greetingMorning");
+    else if (hour >= 3 && hour < 6) return t("header.greetingMidnight");
+    else if (hour >= 6 && hour < 12) return t("header.greetingMorning");
     else if (hour === 12) return t("header.greetingDay");
     else if (hour >= 13 && hour < 19) return t("header.greetingAfternoon");
     else return "Hola";
@@ -87,7 +88,7 @@ const Home = () => {
             <span role="img" aria-label="rocket">
               🚀
             </span>{" "}
-            {t("header.whatIDo")}
+            {t("header.whatIDo")}{t("header.speciality")}
           </ResponsiveHeading>
         </Grid>
       </Grid>
