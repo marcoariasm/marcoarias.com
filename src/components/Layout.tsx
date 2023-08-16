@@ -1,9 +1,10 @@
 import React from "react";
+import { Box } from "@mui/material";
+import Logo from "./Logo";
+import LanguageSelector from "./LanguageSelector";
+import MenuButton from "./MenuButton";
 import SocialLinks from "./SocialLinks";
 import DarkMode from "./DarkMode";
-import { Box } from "@mui/material";
-import MenuButton from "./MenuButton";
-import Logo from "./Logo";
 
 const Layout = ({
   mode,
@@ -16,8 +17,8 @@ const Layout = ({
 }) => {
   return (
     <Box sx={{ bgcolor: "background.default", color: "text.primary" }}>
-      {/* <CssBaseline /> */}
       <Logo />
+      <LanguageSelector />
       <MenuButton />
       <SocialLinks />
       <DarkMode mode={mode} setMode={setMode} />

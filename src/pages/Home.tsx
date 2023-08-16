@@ -1,28 +1,65 @@
 import React, { useEffect, useState } from "react";
-import { Container, Grid, Typography, Avatar } from "@mui/material";
-import person from "../img/Marco-Arias.jpg";
-import { useTranslation } from 'react-i18next';
+import {
+  Container,
+  Grid,
+  Typography,
+  Avatar,
+  useMediaQuery,
+  createTheme,
+  SxProps,
+} from "@mui/material";
+import person from "../static/img/Marco-Arias.jpg";
+import { Variant } from "@mui/material/styles/createTypography";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
   const [greeting, setGreeting] = useState<string>("Hola");
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [t, i18n] = useTranslation("global");
 
-  const { t, i18n } = useTranslation(['translation', 'common']);
+  const ResponsiveHeading = ({
+    children,
+    elements,
+    sx,
+  }: {
+    children: React.ReactNode;
+    elements: Variant[];
+    sx?: SxProps;
+  }) => {
+    const theme = createTheme();
+    const matchesXs = useMediaQuery(theme.breakpoints.only("xs"));
+    const matchesSm = useMediaQuery(theme.breakpoints.only("sm"));
 
-  const getGreeting = () => {
+    let variant: Variant = elements[2];
+
+    if (matchesXs) {
+      variant = elements[0];
+    } else if (matchesSm) {
+      variant = elements[1];
+    }
+
+    return (
+      <Typography variant={variant} sx={sx}>
+        {children}
+      </Typography>
+    );
+  };
+
+  const getGreeting = (t: any) => {
     const date = new Date();
     const hour = date.getHours();
     if ((hour >= 19 && hour < 24) || (hour >= 0 && hour < 5))
-      return "Buenas noches";
-    else if (hour >= 5 && hour < 12) return "Buenos días";
-    else if (hour === 12) return "Buen día";
-    else if (hour >= 13 && hour < 19) return "Buenas tardes";
+      return t("header.greetingNight");
+    else if (hour >= 5 && hour < 12) return t("header.greetingMorning");
+    else if (hour === 12) return t("header.greetingDay");
+    else if (hour >= 13 && hour < 19) return t("header.greetingAfternoon");
     else return "Hola";
   };
 
   useEffect(() => {
-    const greetingState = getGreeting();
+    const greetingState = getGreeting(t);
     setGreeting(greetingState);
-  }, []);
+  }, [t]);
 
   return (
     <Container
@@ -36,18 +73,22 @@ const Home = () => {
             src={person}
             sx={{ width: 110, height: 110, mb: 3 }}
           />
-          <Typography variant="h2">{greeting}, soy </Typography>
-          <Typography variant="h1">Marco Arias</Typography>
-          <Typography variant="h5" mt={2}>
-            Front End Developer{" "}
+          <ResponsiveHeading elements={["h5", "h3", "h2"]}>
+            {greeting}{t("header.iAm")}
+          </ResponsiveHeading>
+          <ResponsiveHeading elements={["h4", "h2", "h1"]} sx={{ mb: 2 }}>
+            <strong>{t("header.author")}</strong>
+          </ResponsiveHeading>
+          <ResponsiveHeading elements={["body1", "h5", "h4"]}>
+            {t("header.aboutMe")}
             <span role="img" aria-label="male technologist">
               👨‍💻
             </span>
             <span role="img" aria-label="rocket">
               🚀
             </span>{" "}
-            trabajando en remoto con React, Node y Python
-          </Typography>
+            {t("header.whatIDo")}
+          </ResponsiveHeading>
         </Grid>
       </Grid>
     </Container>

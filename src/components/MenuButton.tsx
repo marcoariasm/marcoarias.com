@@ -1,19 +1,24 @@
 import { useState } from "react";
-import { Close, DragHandle } from "@mui/icons-material";
 import { Box, IconButton, Link, Typography } from "@mui/material";
+import { Close, DragHandle } from "@mui/icons-material";
+import { useTranslation } from "react-i18next";
 import "./MenuButton.css";
 
-const settings = [
-  { page: "Inicio", route: "/" },
-  // { page: "Acerca de mí", route: "/about" },
-  // { page: "Hoja de vida", route: "/resume" },
-  // { page: "Trabajos", route: "/work" },
-  // { page: "Contacto", route: "/contact" },
-];
 
 const MenuButton = () => {
   const [visibleMenu, setVisibleMenu] = useState<boolean>(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [t, i18n] = useTranslation("global");
 
+  const settings = [
+  
+    { page: t("menu.home"), route: "/" },
+    // { page: "Acerca de mí", route: "/about" },
+    // { page: "Hoja de vida", route: "/resume" },
+    // { page: "Trabajos", route: "/work" },
+    // { page: "Contacto", route: "/contact" },
+  ];
+  
   return (
     <>
       <IconButton

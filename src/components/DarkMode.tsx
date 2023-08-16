@@ -1,6 +1,6 @@
 import React from "react";
-import { Brightness4, Brightness7 } from "@mui/icons-material";
 import { Box, IconButton } from "@mui/material";
+import { Brightness4, Brightness7 } from "@mui/icons-material";
 
 const DarkMode = ({
   mode,
@@ -11,6 +11,7 @@ const DarkMode = ({
 }) => {
   const onChangeTheme = (newMode: boolean) => {
     setMode(!newMode);
+    localStorage.setItem("darkMode", String(!newMode));
   };
 
   return (

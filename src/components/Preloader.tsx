@@ -1,6 +1,6 @@
 import React from "react";
-import { KeyboardCommandKey } from "@mui/icons-material";
 import { Box, CssBaseline } from "@mui/material";
+import { KeyboardCommandKey } from "@mui/icons-material";
 
 const Preloader = () => {
   return (
@@ -8,7 +8,7 @@ const Preloader = () => {
       display="flex"
       justifyContent="center"
       alignItems="center"
-      sx={{ height: "100vh" }}
+      sx={{ height: "100vh", bgColor: "inherit", color: "inherit" }}
     >
       <CssBaseline />
       <KeyboardCommandKey
