@@ -1,10 +1,10 @@
 import React from "react";
 import { Card, Container, Grid, Typography } from "@mui/material";
-import cusco from "../../img/cusco.jpg";
-import desktop from "../../img/desktop.jpg";
-import mascota from "../../img/mascota.jpg";
-import sanAndres from "../../img/san-andres.jpg";
-import marriot from "../../img/marriot.jpg";
+import cusco from "../static/img/cusco.jpg";
+import desktop from "../static/img/desktop.jpg";
+import mascota from "../static/img/mascota.jpg";
+import sanAndres from "../static/img/san-andres.jpg";
+import marriot from "../static/img/marriot.jpg";
 
 const About = () => {
   return (
@@ -14,11 +14,11 @@ const About = () => {
     >
       <Grid container spacing={4}>
         <Grid item lg={12} display="flex">
-          <Card sx={{ width: "152px", height: "184px", mb: 8, mr: 2 }}>
-            <img src={cusco} alt="me" width="152px" height="auto" />
+          <Card sx={{ width: "152px", height: "142px", mb: 8, mr: 2 }}>
+            <img src={desktop} alt="me" width="152px" height="auto" />
           </Card>
-          <Card sx={{ width: "150px", height: "142px", mt: 8, mr: 2 }}>
-            <img src={desktop} alt="me" width="150px" height="auto" />
+          <Card sx={{ width: "150px", height: "180px", mt: 8, mr: 2 }}>
+            <img src={cusco} alt="me" width="150px" height="auto" />
           </Card>
           <Card sx={{ width: "231px", height: "173px", mb: 8, mr: 2 }}>
             <img src={mascota} alt="me" width="231px" height="auto" />
@@ -38,8 +38,7 @@ const About = () => {
         <Grid item lg={6} sm={12} />
         <Grid item lg={6} sm={12}>
           <Typography variant="h4">
-            Mi nombres es Marco Arias, soy Front-End Developer, trabajo con React,
-            Node y Django
+            Mi nombre es Marco Arias, vivo en Lima (GMT-5) 🇵🇪 y me gusta 
           </Typography>
         </Grid>
         <Grid item lg={6} sm={12}>

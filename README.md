@@ -18,5 +18,7 @@ npm install react-router-dom
 
 npm install react-i18next i18next --save
 
+npm i formik yup
+
 # if you'd like to detect user language and load translation
 npm install i18next-http-backend i18next-browser-languagedetector --save

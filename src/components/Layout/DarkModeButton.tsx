@@ -2,7 +2,16 @@ import React from "react";
 import { Box, IconButton } from "@mui/material";
 import { Brightness4, Brightness7 } from "@mui/icons-material";
 
-const DarkMode = ({
+const styles = {
+  box: {
+    position: "fixed",
+    left: 0,
+    bottom: 0,
+    pb: 2,
+  }
+}
+
+const DarkModeButton = ({
   mode,
   setMode,
 }: {
@@ -15,15 +24,7 @@ const DarkMode = ({
   };
 
   return (
-    <Box
-      sx={{
-        position: "fixed",
-        left: 0,
-        bottom: 0,
-        zIndex: 2,
-        pb: 2,
-      }}
-    >
+    <Box sx={{ ...styles.box }}>
       <IconButton sx={{ ml: 1 }} onClick={() => onChangeTheme(mode)}>
         {mode ? <Brightness7 /> : <Brightness4 />}
       </IconButton>
@@ -31,4 +32,4 @@ const DarkMode = ({
   );
 };
 
-export default DarkMode;
+export default DarkModeButton;

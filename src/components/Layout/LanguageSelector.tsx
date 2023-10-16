@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import { Box, IconButton } from '@mui/material';
 import { useTranslation } from "react-i18next";
-import es from "../static/img/es.png";
-import en from "../static/img/en.png";
+import es from "../../static/img/es.png";
+import en from "../../static/img/en.png";
 
 const LanguageSelector = () => {
   const [hideFlag, setHideFlag] = useState<boolean>();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [t, i18n] = useTranslation("translate");
+  const [, i18n] = useTranslation("translate");
 
   const onClick = (e: any) => {
     i18n.changeLanguage(e.target.id);

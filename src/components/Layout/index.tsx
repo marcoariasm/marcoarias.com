@@ -4,7 +4,7 @@ import Logo from "./Logo";
 import LanguageSelector from "./LanguageSelector";
 import MenuButton from "./MenuButton";
 import SocialLinks from "./SocialLinks";
-import DarkMode from "./DarkMode";
+import DarkModeButton from "./DarkModeButton";
 
 const Layout = ({
   mode,
@@ -21,7 +21,7 @@ const Layout = ({
       <LanguageSelector />
       <MenuButton />
       <SocialLinks />
-      <DarkMode mode={mode} setMode={setMode} />
+      <DarkModeButton mode={mode} setMode={setMode} />
       {children}
     </Box>
   );

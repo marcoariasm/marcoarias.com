@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <Link href="/" sx={{ color: "inherit" }}>
       <KeyboardCommandKey
-        sx={{ position: "absolute", m: 3, zIndex: 2, fontSize: "55px" }}
+        sx={{ position: "absolute", m: 3, zIndex: 2, fontSize: "40px" }}
       />
     </Link>
   );

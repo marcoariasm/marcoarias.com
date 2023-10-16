@@ -1,18 +1,107 @@
 {
-  "header": {
+  "home": {
     "greetingMorning": "Good morning",
     "greetingDay": "Good day",
     "greetingAfternoon": "Good afternoon",
     "greetingNight": "Good night",
     "greetingMidnight": "Hi, early owl",
     "greetingHi": "Hi",
-    "iAm": ", I am",
+    "iAm": ", I'm",
     "author": "Marco Arias",
     "aboutMe": "Front End Web Developer ",
-    "whatIDo":" working from home with JavaScript (React - Node) and Python (Django).",
-    "speciality": " My speciality is financial, banking and insurance websites."
+    "whatIDo": " working from home with JavaScript (React - Node.js).",
+    "specialty": " My specialty is financial, banking and insurance websites.",
+    "contact": "Contact Me"
   },
   "menu": {
-    "home": "Home"
+    "home": "home",
+    "resume": "resume",
+    "contact": "contact"
+  },
+  "resume": {
+    "title": "Resume",
+    "extract": "Highly skilled Systems and Computer Engineer with a proven track record in web development and software engineering. Proficient Front-End developer and Scrum Master Certified with extensive experience in creating robust web applications. Fluent in JavaScript, React, Node.js and Python, Django, with expertise in both frontend and backend technologies. Adept at driving projects to success while adhering to industry best practices. Strong analytical, planning, and communication skills combined with a commitment to teamwork and user-centric design.",
+    "subtitle1": "Work Experience",
+    "experiences": [
+      {
+        "nameCompany": "WHITE PROMPT",
+        "position": "Senior Software Engineer",
+        "description": "Libertas Funding LLC - Funding Management System - Develops frontend and backend features for an MVP of a medium-sized entreprises crowd..",
+        "technologies": "React with Typescript, Javascript, MUI, Node.js",
+        "time": "Jul, 2022 - continues"
+      },
+      {
+        "nameCompany": "GLOBANT",
+        "position": "Web UI Developer Semi Senior",
+        "description": "Libertas Funding LLC - Funding Management System - Develops frontend and backend features for an MVP of a medium-sized entreprises crowd..",
+        "technologies": "React with Typescript, Javascript, MUI, Node.js",
+        "time": "Jun, 2021 - Jul, 2022"
+      },
+      {
+        "nameCompany": "NTT Data (FKA Everis)",
+        "position": "Engineer",
+        "description": "Libertas Funding LLC - Funding Management System - Develops frontend and backend features for an MVP of a medium-sized entreprises crowd..",
+        "technologies": "React with Typescript, Javascript, MUI, Node.js",
+        "time": "Sep, 2020 - May, 2021"
+      },
+      {
+        "nameCompany": "INDEPENDENT CONSULTOR",
+        "position": "Freelancer",
+        "description": "Libertas Funding LLC - Funding Management System - Develops frontend and backend features for an MVP of a medium-sized entreprises crowd..",
+        "technologies": "React with Typescript, Javascript, MUI, Node.js",
+        "time": "Jan, 2016 - Aug, 2020"
+      }
+    ],
+    "subtitle2": "Academic Training",
+    "university": "TECHNOLOGICAL UNIVERSITY OF PERU, Lima, Peru",
+    "grade": "Systems and Informatics Engineer",
+    "studiesCertifications": "Certifications and complementary studies",
+    "studies": [
+      {
+        "name": "Scrum Master Certified SCM™.",
+        "institution": "Scrum Study",
+        "date": "Dec, 2020"
+      },
+      {
+        "name": "Gatsby , Redux , Angular, RxJS Library, SEO and Analytics, Webpack, Git and GitHub, Typescript, Linter and Prettier, React Testing Library among others.",
+        "institution": "Globant Corporate Udemy",
+        "date": "Jun, 2022"
+      },
+      {
+        "name": "Fullstack Development Bootcamp - React, Node.js",
+        "institution": "Codigo by Tecsup. 500 hour program",
+        "date": "Aug, 2020"
+      }
+    ],
+    "languagesTitle": "Languages",
+    "languages": [
+      {
+        "language": "Spanish.",
+        "level": "Native"
+      },
+      {
+        "language": "English.",
+        "level": "C1, Fluent"
+      }
+    ],
+    "downloadText": "Download"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "If you want to contact me, drop a message 📧 using the following form, I will be happy to answer you",
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "John Doe",
+      "nameRequired": "Name is required",
+      "email": "Email",
+      "emailPlaceholder": "john@email.com",
+      "emailError": "Email must be a valid email",
+      "emailRequired": "Email is required",
+      "message": "Message",
+      "messagePlaceholder": "Write your message",
+      "messageRequired": "Message is Required",
+      "send": "Send",
+      "cancel": "Cancel"
+    }
   }
 }

@@ -1,18 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.250c0f03.css",
-    "main.js": "/static/js/main.0b360ba1.js",
-    "static/js/532.94eaba6a.chunk.js": "/static/js/532.94eaba6a.chunk.js",
+    "main.js": "/static/js/main.8727fc10.js",
+    "static/js/486.0eb09d2e.chunk.js": "/static/js/486.0eb09d2e.chunk.js",
+    "static/js/86.1931587c.chunk.js": "/static/js/86.1931587c.chunk.js",
+    "static/js/245.8e4b20dd.chunk.js": "/static/js/245.8e4b20dd.chunk.js",
     "static/js/787.71e672d5.chunk.js": "/static/js/787.71e672d5.chunk.js",
+    "static/js/841.8a325cbd.chunk.js": "/static/js/841.8a325cbd.chunk.js",
+    "static/js/275.b6311a06.chunk.js": "/static/js/275.b6311a06.chunk.js",
     "static/media/Marco-Arias.jpg": "/static/media/Marco-Arias.a1edc8fc33bf0667550e.jpg",
     "index.html": "/index.html",
     "main.250c0f03.css.map": "/static/css/main.250c0f03.css.map",
-    "main.0b360ba1.js.map": "/static/js/main.0b360ba1.js.map",
-    "532.94eaba6a.chunk.js.map": "/static/js/532.94eaba6a.chunk.js.map",
-    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map"
+    "main.8727fc10.js.map": "/static/js/main.8727fc10.js.map",
+    "486.0eb09d2e.chunk.js.map": "/static/js/486.0eb09d2e.chunk.js.map",
+    "86.1931587c.chunk.js.map": "/static/js/86.1931587c.chunk.js.map",
+    "245.8e4b20dd.chunk.js.map": "/static/js/245.8e4b20dd.chunk.js.map",
+    "787.71e672d5.chunk.js.map": "/static/js/787.71e672d5.chunk.js.map",
+    "841.8a325cbd.chunk.js.map": "/static/js/841.8a325cbd.chunk.js.map",
+    "275.b6311a06.chunk.js.map": "/static/js/275.b6311a06.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.250c0f03.css",
-    "static/js/main.0b360ba1.js"
+    "static/js/main.8727fc10.js"
   ]
 }
